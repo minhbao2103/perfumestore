@@ -1,0 +1,747 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --white-color:white;
+}
+body {
+     font-family: ubuntu;
+}
+
+.headerPage {
+    width: 100%;
+    height: 110px;
+    background-color: rgb(225,225,225);
+    border-bottom: 1px solid rgb(166, 161, 161);
+    z-index: 100;
+}
+.headerPage__content {
+    width: 100%;
+    height: 100%;
+    padding:38px 12px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.headerPage__content .header__img {
+    width: 200px;
+    height: 30px;
+}
+.selectLocation {
+    z-index: 100;
+}
+.search {
+    width: 300px;
+    height: 30px;
+}
+.search  input {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(225,225,225);
+    border: 1px solid grey;
+    border-radius: 6px;
+}
+
+.selectLocation {
+    font-size: 20px;
+    display: flex;
+    gap: 4px;
+    cursor: pointer;
+    position: relative;
+}
+.selectLocation__menu {
+    height: 386px;
+    width: 200px;
+    border: 1px solid rgb(192,192,192);
+    background-color: white;
+    position: absolute;
+    top: 80%;
+    right: 0%;
+    display: none;
+    overflow-y:scroll;
+}
+.selectLocation:hover .selectLocation__menu {
+    display: block;
+    cursor: pointer;
+}
+.headerPage .icon {
+    width: 160px;
+}
+.headerPage .icon a {
+    color: black;
+}
+.headerPage .icon__list {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+.selectLocation__menu .selectLocation--item {
+  width: 100%;
+  font-size: smaller;
+  padding: 8px 0px;
+  padding-left: 8px;
+  list-style-type: none;
+}
+.selectLocation__menu .selectLocation--item:hover {
+    background-color: rgb(224,224,224);
+}
+
+/* navigation */
+.navbar {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(225,225,225);
+    line-height: 70px;
+    z-index: 90;
+}
+.navbar__list {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    z-index: 90;
+}
+.navbar .navbar__list--item1 {
+    position: relative;
+    cursor: pointer;
+    z-index: 90;
+}
+.navbar .navbar-minimenu {
+    position: absolute;
+    left: 0%;
+    height: 220px;
+    width: 200px;
+    display: none;
+    background-color: rgb(248,248,248);
+}
+.navbar__list .navbar__list--item1:hover .navbar-minimenu  {
+    display: block;
+    cursor: pointer;
+    transition: all 0.8s ease;
+}
+.navbar .navbar-minimenu {
+    list-style-type: none;
+    border: 1px solid rgb(192,192,192);
+    border-top: none;
+}
+.navbar .navbar-minimenu-list {
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    padding-left: 8px;
+}
+.navbar .navbar-minimenu-list:hover {
+    background-color: rgb(225,225,225);
+    z-index: 90;
+}
+.navbar__list--item2 {
+    position: relative;
+    z-index: 90;
+}
+.navbar__list--item2:hover {
+    cursor: pointer;
+}
+.perfumes__list {
+    width: 1524px;
+    height: 400px;
+    position: absolute;
+    left: -344%;
+    background-color: 	rgb(255,255,255);
+    display: flex;
+    display: none;
+    overflow-x: hidden;
+    justify-content:space-evenly;
+    padding-left: 60px;
+}
+.navbar__list .navbar__list--item2:hover .perfumes__list  {
+    cursor: pointer;
+    display: flex;
+}
+.menu__title:hover {
+    cursor: pointer;
+}
+.perfumes__list .menu__title {
+    width: 200px;
+    
+}
+.perfumes__list-menu {
+    list-style-type: none;
+}
+.perfumes__list-menu li {
+    height: 30px;
+    width: 100%;
+    line-height: 30px;
+    font-size: 12px;
+    font-weight: lighter;
+}
+.perfumes__list-menu li:hover {
+    cursor: pointer;
+}
+/* COLECTIONS */
+.navbar__list--item3 {
+    position: relative;
+    z-index: 90;
+}
+.navbar__list--item3:hover {
+    cursor: pointer;
+}
+.perfumes__list3 {
+    width: 1526px;
+    height: 350px;
+    position: absolute;
+    left: -453%;
+    background-color: 	rgb(255,255,255);
+    display: flex;
+    display: none;
+    justify-content:space-evenly;
+}
+.navbar__list .navbar__list--item3:hover .perfumes__list3  {
+    cursor: pointer;
+    display: flex;
+}
+.menu__title:hover {
+    cursor: pointer;
+}
+.perfumes__list .menu__title {
+    width: 200px;
+}
+.perfumes__list-menu {
+    list-style-type: none;
+}
+.perfumes__list-menu li {
+    height: 30px;
+    width: 100%;
+    line-height: 30px;
+    font-size: 12px;
+    font-weight: lighter;
+}
+.perfumes__list-menu li:hover {
+    cursor: pointer;
+}
+/* BATH AND BODY */
+
+.navbar__list--item4 {
+    position: relative;
+    z-index: 90;
+}
+.navbar__list--item4:hover {
+    cursor: pointer;
+}
+.perfumes__list4 {
+    width: 1525px;
+    height: 280px;
+    position: absolute;
+    left: -682%;
+    background-color: 	rgb(255,255,255);
+    display: flex;
+    display: none;
+    justify-content:space-evenly;
+}
+.navbar__list .navbar__list--item4:hover .perfumes__list4  {
+    cursor: pointer;
+    display: flex;
+}
+.menu__title:hover {
+    cursor: pointer;
+}
+.perfumes__list .menu__title {
+    width: 200px;
+}
+.perfumes__list-menu {
+    list-style-type: none;
+}
+.perfumes__list-menu li {
+    height: 30px;
+    width: 100%;
+    line-height: 30px;
+    font-size: 12px;
+    font-weight: lighter;
+}
+.perfumes__list-menu li:hover {
+    cursor: pointer;
+}
+.navbar__list .navbar__list--item4 .imgmini:hover img {
+    transform: scale(1.05);
+    transition: all 0.5s linear;
+}
+/* home */
+.navbar__list--item5 {
+    position: relative;
+    z-index: 90;
+}
+.navbar__list--item5:hover {
+    cursor: pointer;
+}
+.perfumes__list5 {
+    width: 1529px;
+    height: 230px;
+    position: absolute;
+    left: -1724%;
+    background-color: 	rgb(255,255,255);
+    display: flex;
+    display: none;
+    justify-content:space-evenly;
+}
+.navbar__list .navbar__list--item5:hover .perfumes__list5  {
+    cursor: pointer;
+    display: flex;
+}
+.menu__title:hover {
+    cursor: pointer;
+}
+.perfumes__list .menu__title {
+    width: 200px;
+}
+.perfumes__list-menu {
+    list-style-type: none;
+}
+.perfumes__list-menu li {
+    height: 30px;
+    width: 100%;
+    line-height: 30px;
+    font-size: 12px;
+    font-weight: lighter;
+}
+.perfumes__list-menu li:hover {
+    cursor: pointer;
+}
+.navbar__list .navbar__list--item5 .imgmini:hover img {
+    transform: scale(1.05);
+    transition: all 0.5s linear;
+}
+/* GIFT IDEA */
+.navbar__list--item6 {
+    position: relative;
+    z-index: 90;
+}
+.navbar__list--item6:hover {
+    cursor: pointer;
+}
+.perfumes__list6 {
+    width: 1531px;
+    height: 400px;
+    position: absolute;
+    left: -1212%;
+    background-color:	rgb(255,255,255);
+    display: flex;
+    display: none;
+    justify-content:space-evenly;
+}
+.navbar__list .navbar__list--item6:hover .perfumes__list6  {
+    cursor: pointer;
+    display: flex;
+}
+.menu__title:hover {
+    cursor: pointer;
+}
+.perfumes__list .menu__title {
+    width: 200px;
+}
+.perfumes__list-menu {
+    list-style-type: none;
+}
+.perfumes__list-menu li {
+    height: 30px;
+    width: 100%;
+    line-height: 30px;
+    font-size: 12px;
+    font-weight: lighter;
+}
+.perfumes__list-menu li:hover {
+    cursor: pointer;
+}
+.navbar__list .navbar__list--item6 .imgmini:hover img {
+    transform: scale(1.05);
+    transition: all 0.5s linear;
+}
+/* HOUSE OF AMOUAGE */
+
+.navbar__list--item7 {
+    position: relative;
+    z-index: 90;
+}
+.navbar__list--item7:hover {
+    cursor: pointer;
+}
+.perfumes__list7 {
+    width: 1536px;
+    height: 220px;
+    position: absolute;
+    left: -800%;
+    background-color:rgb(255,255,255);
+    display: flex;
+    display: none;
+    justify-content:space-evenly;
+}
+.navbar__list .navbar__list--item7:hover .perfumes__list7  {
+    cursor: pointer;
+    display: flex;
+}
+.menu__title:hover {
+    cursor: pointer;
+}
+.carousel-inner .item img {
+    border-top: 1px solid rgb(166, 161, 161);
+}
+/* discovertitle */
+.discover-title {
+    text-align: center;
+    margin: 24px 0px;
+}
+.collection-wrap {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content:space-evenly;
+    padding: 0px 48px;
+    position: relative;
+    background-image: url("./images/background\ cls.webp");
+}
+.colecltion-item {
+    width: 240px;
+}
+.colecltion-item img {
+    width:100%;
+    height: 360px;
+}
+.item-content {
+    max-width: 240px;
+    position: absolute;
+    bottom: 15%;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+}
+.item-content button {
+    border: 1px solid white;
+    background-color: inherit;
+    height: 30px;
+    width: 100px;
+    border-radius: 6px;
+}
+.item-content button:hover {
+    background-color: white;
+    color: black;
+    transition: all 0.3s linear;
+    border-radius: 6px;
+}
+
+/* summer content */
+
+.collection-wrap-2 {
+    width: 100%;
+    height: 340px;
+    display: flex;
+    justify-content:space-evenly;
+    padding: 0px 48px;
+    background-color: rgb(248,248,248);
+}
+.colecltion-item-2 {
+    width: 240px;
+}
+.colecltion-item-2 img {
+    width:100%;
+    height: 260px;
+    background-color: rgb(225,225,225);
+}
+.item-content-2 {
+    max-width: 240px;
+    text-align: center;
+    font-family: sans-serif;
+    padding-top: 12px;
+}
+
+.fragrance-title {
+    display: flex;
+    gap: 20px;
+    justify-content:center ;
+}
+.btnmore {
+    width: 100%;
+    background-color:rgb(248,248,248) ;
+    text-align: center;
+}
+.btnmore button {
+    width: 200px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: rgb(248,248,248);
+}
+.btnmore button:hover {
+    background-color: black;
+    color: white;
+    transition: all 0.3s linear;
+}
+
+/* content-textcontainer */
+
+.content-textcontainer {
+    width: 100%;
+    height: 680px;
+    background-image: url("./images/amgmob1.jpg");
+    position: relative;
+    text-align: center;
+    margin: 24px 0px;
+}
+.content-item {
+    width: 1200px;
+    height: 500px;
+    background-color: inherit;
+    position: absolute;
+    color: white;
+    top: 10%;
+    left: 10%;
+
+}
+.content-item p {
+    font-size: 24px;
+    position: absolute;
+    top: 20%;
+    left: 32%;
+    width: 450px;
+    height: 200px;
+}
+.content-item button {
+    background-color: inherit;
+    position: absolute;
+    bottom: 0%;
+    left: 42%;
+    width: 200px;
+    height: 40px;
+    border: 1px solid white;
+    color: white;
+    border-radius: 3px;
+}
+.content-item button:hover {
+    border-radius: 3px;
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    transition: all 0.3s linear;
+}
+
+/* bestseller */
+
+.collection-wrap-3 {
+    width: 100%;
+    height: 340px;
+    display: flex;
+    justify-content:space-evenly;
+    padding: 0px 48px;
+    background-color: rgb(248,248,248);
+}
+.colecltion-item-3 {
+    width: 240px;
+}
+.colecltion-item-3 img {
+    width:100%;
+    height: 260px;
+    background-color: rgb(225,225,225);
+}
+.item-content-3 {
+    max-width: 240px;
+    text-align: center;
+    font-family: sans-serif;
+    padding-top: 12px;
+}
+
+.fragrance-title {
+    display: flex;
+    gap: 20px;
+    justify-content:center ;
+}
+.btnmore-3 {
+    width: 100%;
+    background-color:rgb(248,248,248) ;
+    text-align: center;
+}
+.btnmore-3 button {
+    width: 200px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: rgb(248,248,248);
+}
+.btnmore-3 button:hover {
+    background-color: black;
+    color: white;
+    transition: all 0.3s linear;
+}
+.houseOfAmouage {
+    background-image:url("./images/house.jpg");
+    height: 400px;
+    width:100%;
+   position: relative;
+   margin-top: 24px;
+}
+.houseOfAmouage h3 {
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    left: 40%;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    color: rgb(255,255,255);
+}
+.houseOfAmouage h1  {
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    left: 40%;
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: 200;
+    color: rgb(255,255,255);
+}
+.houseOfAmouage button {
+    height: 40px;
+    width: 200px;
+    position: absolute;
+    bottom: 10%;
+    left: 43%;
+    background-color: inherit;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+.houseOfAmouage button:hover {
+    background-color: white;
+    color: black;
+    transition: all 0.3s linear;
+}
+
+.footer {
+    height: 500px;
+    width: 100%;
+    display: flex;
+}
+.footer-amouage {
+    height: 100%;
+    width: 25%;
+    text-align: left;
+    position: relative;
+}
+.footer-amouage h2 {
+    position: absolute;
+    left: 30%;
+    top: 10%;
+    width: 100px;
+}
+.footer-amouage p {
+    width: 160px;
+    position: absolute;
+    left: 30%;
+    top: 20%;
+}
+.footer .followus {
+    width: 170px;
+    position: absolute;
+    left: 30%;
+    top: 35%;
+}
+.footer-house {
+    height: 100%;
+    width: 75%;
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+   padding-top: 78px
+}
+.a1 {
+    height: 200px;
+    width:250px;
+}
+.a2 {
+    height: 200px;
+    width:250px;
+}
+
+.a3 {
+    height: 200px;
+    width: 250px; 
+}
+.a4 {
+    height: 200px;
+    width: 250px;
+}
+.a5 {
+    position: absolute;
+    height: 200px;
+    width: 400px;
+    bottom: 5%;
+    right: 5%;
+}
+.footer-icon i {
+    font-size: 30px;
+    padding: 12px 12px;
+}
+.a1 h5 {
+    padding: 0px 12px 0px;
+    font-weight: 700;
+}
+.a1 .a1-item {
+    list-style-type: none;
+    padding: 4px 12px;
+}
+
+.a2 h5 {
+    padding: 0px 12px 0px;
+    font-weight: 700;
+}
+.a2 .a2-item {
+    list-style-type: none;
+    padding: 4px 12px;
+}
+
+.a3 h5 {
+    padding: 0px 12px 0px;
+    font-weight: 700;
+}
+.a3 .a3-item {
+    list-style-type: none;
+    padding: 4px 12px;
+}
+
+.a4 h5 {
+    padding: 0px 12px 0px;
+    font-weight: 700;
+}
+.a4 .a4-item {
+    list-style-type: none;
+    padding: 4px 12px;
+}
+
+
+.a5 h5 {
+    padding: 0px 12px 0px;
+    font-weight: 700;
+}
+.a5 P {
+    padding: 0px 12px 0px;
+    font-size: small;
+}
+.inputEmail {
+    padding: 0px 12px 0px;
+}
+.inputEmail input {
+    width: 250px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid rgb(166, 161, 161);
+}
+.inputEmail button {
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: black;
+    border-radius: 3px;
+}
+.a5 .p-end {
+    font-size: smaller;
+}
+.a5 .p-end a {
+    text-decoration: none;
+    color: rgb(40, 200, 224);
+}

@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    background-image: url('./images/pexels-quang-nguyen-vinh-2563129.jpg');
+    background-size: cover
+  }
+  
+  body > div {
+    margin: 5% auto 0;
+    max-width: 360px;
+  }
+  .tabs {
+    display: flex;
+    position: relative;
+  }
+  .tabs .line {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 164px;
+    height: 6px;
+    border-radius: 15px;
+    background-color: #c23564;
+    transition: all 0.2s ease;
+  }
+  .tab-item {
+    width: 50%;
+    padding: 12px;
+    min-width: 80px;
+    font-size: 20px;
+    text-align: center;
+    color: #c23564;
+    background-color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 5px solid transparent;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+  .tab-icon {
+    font-size: 24px;
+    width: 32px;
+    position: relative;
+    top: 2px;
+  }
+  .tab-item:hover {
+    opacity: 1;
+    background-color: rgba(#fff, 53, 100, 0.05);
+    border-color: rgba(#fff, 53, 100, 0.1);
+  }
+  .tab-item.active {
+    opacity: 1;
+  }
+  
+  .tab-content {
+    padding: 24px;
+    background-color: #fff;
+  }
+  .tab-pane {
+    color: #333;
+    display: none;
+  }
+  .tab-pane.active {
+    display: block;
+   
+  }
+  .tab-pane h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  .active {
+    display: block;
+  }
+  .tab-content .form-group {
+    margin: 16px 0px;
+  }
+  .tab-content .form-group input {
+    height: 36px;
+    width: 280px;
+    border-radius: 8px;
+    padding:  0px 16px;
+    border: 1px solid black;
+  }
+  
+  .tab-content .form-group .form-message {
+    padding: 6px 0px 0px 0px;
+    font-size: 12px;
+  }
+  .tab-content  button  {
+    font-size: 16px;
+    color:#fff;
+    border: none;
+    background-color: #c23564	;
+    margin: 12px 0px;
+    width: 100%;
+    height: 36px;
+  }
+  .form-message {
+    color: red;
+  }

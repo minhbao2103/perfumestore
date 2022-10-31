@@ -383,7 +383,6 @@ body {
     transition: all 0.5s linear;
 }
 /* HOUSE OF AMOUAGE */
-
 .navbar__list--item7 {
     position: relative;
     z-index: 90;
@@ -507,7 +506,7 @@ body {
 .content-textcontainer {
     width: 100%;
     height: 680px;
-    background-image: url("./images/amgmob1.jpg");
+    background-image: url("../images/amgmob1.jpg");
     position: relative;
     text-align: center;
     margin: 24px 0px;
@@ -597,7 +596,7 @@ body {
     transition: all 0.3s linear;
 }
 .houseOfAmouage {
-    background-image:url("./images/house.jpg");
+    background-image:url("../images/house.jpg");
     height: 400px;
     width:100%;
    position: relative;
